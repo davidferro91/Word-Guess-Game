@@ -10,6 +10,7 @@ var spaceWords = ["planet", "galaxy", "space", "interstellar", "astronaut", "mar
 var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 var spaceWordNum = -1;
+var spaceWord = "";
 
 var textWinCount = document.createTextNode("" + winCount);
 document.getElementById("winCounter").appendChild(textWinCount);
@@ -25,7 +26,7 @@ document.body.addEventListener("keypress", function() {
     spaceWordNum = Math.floor(Math.random() * spaceWords.length);
     console.log(spaceWordNum);
     
-    var spaceWord = spaceWords[spaceWordNum];
+    spaceWord = spaceWords[spaceWordNum];
     console.log(spaceWord);
     
     for (var i=0; i<spaceWord.length; i++) {
@@ -35,11 +36,23 @@ document.body.addEventListener("keypress", function() {
         guess.appendChild(textGuess);
         document.getElementById("wordHolder").appendChild(guess);
         }
-        spaceWordNum++;
+        
 
     } else {
         
-        spaceWordNum++;
+        
     }
      
     });
+
+var nodeCounter = 1;
+
+document.getElementById("newGame").addEventListener("click", function() {
+    for (var i=0; i < spaceWord.length + nodeCounter; i++) {
+    var reset = document.getElementById("wordHolder");
+    reset.removeChild(reset.childNodes[0]);
+    }
+    guessNumber = 10;
+    spaceWordNum = -1;
+    nodeCounter = 0;
+});
