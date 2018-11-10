@@ -13,8 +13,10 @@ var spaceWordNum = -1;
 
 var textWinCount = document.createTextNode("" + winCount);
 document.getElementById("winCounter").appendChild(textWinCount);
+
 var textLossCount = document.createTextNode("" + lossCount);
 document.getElementById("lossCounter").appendChild(textLossCount);
+
 var textGuessNumber = document.createTextNode("" + guessNumber);
 document.getElementById("guessRemaining").appendChild(textGuessNumber);
 
