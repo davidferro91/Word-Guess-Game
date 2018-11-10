@@ -19,27 +19,31 @@
         </header>
         <section class="container">
             <div class="row">
+                <div class="col-3"></div>
                 <div class="col-6 text-danger lead m-2 text-justified">
-                    <h2>Press any key to get started!</h2>
+                    <h2 id="instructions">Press any key to get started!</h2>
                 </div>
             </div>
 
             <div class="row">
+                <div class="col-3"></div>
                 <div class="col-3 text-danger lead m-2 text-justified" id="winCounter">
-                    Wins: 
+                    Wins: 0
                 </div>
                 <div class="col-3 text-danger lead m-2 text-justified" id="lossCounter">
-                    Losses: 
+                    Losses: 0
                 </div>
             </div>
 
             <div class="row">
+                <div class="col-3"></div>
                 <div class="col-6 text-danger lead m-2 text-justified">
                     Current Word
                 </div>
             </div>
             
             <div class="row">
+                <div class="col-3"></div>
                 <div class="col-6 m-3 p-3 text-danger text-justified lead" id="currentWord">
                     <ul class="row" id="wordHolder">
 
@@ -47,17 +51,24 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-3"></div>
                 <div class="col-6 text-danger lead m-2 text-justified" id="guessRemaining">
-                    Number of Guesses Remaining:
+                    Number of Guesses Remaining: 10
                 </div>
             </div>
             <div class="row">
+                <div class="col-3"></div>
                 <div class="col-6 text-danger lead m-2 text-justified" id="lettersRemaining">
                         Letters Already Guessed:
                 </div>
             </div>
 
-            <button type="button" class="btn btn-danger border border-dark" id="newGame">New Game</button>
+            <div class="row">
+                <div class="col-8"></div>
+                <div class="col-4">
+                    <button type="button" class="btn btn-danger border border-dark" id="newGame">New Game</button>
+                </div>
+            </div>
 
         </section>
 
