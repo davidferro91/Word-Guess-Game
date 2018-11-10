@@ -11,6 +11,13 @@ var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
 
 var spaceWordNum = -1;
 
+var textWinCount = document.createTextNode("" + winCount);
+document.getElementById("winCounter").appendChild(textWinCount);
+var textLossCount = document.createTextNode("" + lossCount);
+document.getElementById("lossCounter").appendChild(textLossCount);
+var textGuessNumber = document.createTextNode("" + guessNumber);
+document.getElementById("guessRemaining").appendChild(textGuessNumber);
+
 document.body.addEventListener("keypress", function() {
     if (spaceWordNum == -1) {
     spaceWordNum = Math.floor(Math.random() * spaceWords.length);
