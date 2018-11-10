@@ -1,0 +1,11 @@
+.background {
+    background: #070707;
+    background-image: url(space.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.text-danger {
+    font-family: 'Righteous', cursive;
+}
